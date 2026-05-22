@@ -4,13 +4,15 @@ st.title("Aplikasi asya")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
-import pandas as pd
+import time
 import streamlit as st
-from numpy.random import default_rng as rng
 
-df = pd.DataFrame(
-    rng(0).standard_normal((1000, 2)) / [50, 50] + [37.76, -122.4],
-    columns=["lat", "lon"],
-)
+with st.status("Downloading data..."):
+    st.write("Searching for data...")
+    time.sleep(2)
+    st.write("Found URL.")
+    time.sleep(1)
+    st.write("Downloading data...")
+    time.sleep(1)
 
-st.map(df)
+st.button("Rerun")
