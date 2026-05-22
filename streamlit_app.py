@@ -16,3 +16,6 @@ st.header("One", divider=True)
 st.header("Two", divider=True)
 st.header("Three", divider=True)
 st.header("Four", divider=True)
+df = pd.DataFrame(rng(0).standard_normal((20, 3)), columns=["a", "b", "c"])
+
+st.area_chart(df)
