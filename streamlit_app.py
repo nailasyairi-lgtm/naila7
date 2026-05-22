@@ -6,4 +6,4 @@ st.write(
 )
 import streamlit as st
 
-st.warning('Awas hati-hati ada buaya asya', icon="⚠️")
+st.warning('Awas hati-hati ada cesil asya', icon="⚠️")
