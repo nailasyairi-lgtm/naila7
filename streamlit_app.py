@@ -4,6 +4,14 @@ st.title("Aplikasi asya")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
-import streamlit as st
+# app.py — baris 13
+st.set_page_config(
+  page_title="Finance Dashboard",
+  layout="wide"
+)
 
-st.warning('Awas hati-hati ada cesil asya', icon="⚠️")
+# Hirarki teks
+st.title("📊 Dashboard")
+st.header("Laporan Bulanan")
+st.subheader("📈 Monthly Expenses")
+st.caption("Made with ❤️ using Streamlit")
